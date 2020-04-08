@@ -1,0 +1,464 @@
+<html>
+    <head>
+        <style medai="all">
+            @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+            * {
+                font-family: 'Source Sans Pro';
+            }
+            body {
+                background-color: #fefefe;
+            }
+            h1,
+            .tagline {
+                text-align: center;
+                font-family: Verdana,sans-serif;
+                margin: 15px;
+            }
+            h4 {
+                text-align: center;
+            }
+            a {
+                text-decoration:none;
+                color:#222;
+            }
+            ul, ol {
+                list-style: none;
+            }
+            ol {
+                padding-left: 0;
+                margin-left: 0;
+            }
+            hr {
+                width: 90%;
+            }
+            li:nth-of-type(even) {
+                background-color: #f8f8f8;
+            }
+            b.ackwards:before {
+                content: '\202e';
+            }
+            li>a>img {
+                width: 100%;
+            }
+            ul.samples>li {
+                padding: 3px 0;
+                background-color: initial;
+            }
+            .formobile {
+                display: none;
+            }
+            .notformobile {
+                display: initial;
+            }
+            .printbreak {
+                display: none;
+            }
+            #top {
+                border-bottom: solid 1px #888;
+            }
+            #container {
+                width: 930px;
+                margin: 0 auto;
+            }
+            #sidebar {
+                float: right;
+                width: 316px;
+                margin: 0;
+            }
+            #content {
+                width: 600px;
+            }
+            #contact>ol>li {
+                padding: 6px 2px;
+            }
+            #contact>ol>li:first-child {
+                padding-top: 0;
+            }
+            #contact>ol>li:last-child {
+                padding-bottom: 0;
+            }
+            #objectives h2,
+            #profile h2,
+            #skills h2,
+            #contact h2,
+            #values h2,
+            #interests h2,
+            #references h2 {
+                border-bottom:solid 1px #888;
+                padding-bottom: 5px;
+            }
+            #objectives ul,
+            #profile ul,
+            #contact ul,
+            #skills ul,
+            #values ul,
+            #interests ul{
+                list-style: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            #skills li {
+                position: relative;
+            }
+            #skills li span {
+                color:#222;
+                position: absolute;
+                right: 0;
+            }
+            #education,
+            #experience {
+                border-right: 1px solid #888;
+                padding-right: 20px;
+                margin: 10px;
+            }
+            #education>hr,
+            #experience>hr {
+                width: 50%;
+            }
+            #education h2,
+            #experience h2 {
+                font-size: 2rem;
+            }
+            #footer {
+                text-align:center;
+            }
+        </style>
+        <style media="only screen and (max-device-width: 50rem)">
+            .tagline>span {
+                font-size: 2.4rem;
+            }
+        </style>
+        <style media="only screen and (max-device-width: 50rem),(max-width: 1024px)">
+            .tagline {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                text-align: inherit;
+                margin: auto;
+                font-size: 1.2rem;
+            }
+            #education,
+            #experience {
+                border-right: 0;
+                padding-right: 0;
+            }
+            #container {
+                width: initial;
+                max-width: 800px;
+                min-width: 320px;
+            }
+            #top {
+                border-bottom: 0;
+            }
+            #sidebar {
+                float: initial;
+                width: initial;
+            }
+            #content {
+                width: initial;
+            }
+            #objectives h2,
+            #profile h2,
+            #skills h2,
+            #contact h2,
+            #values h2,
+            #interests h2,
+            #references h2 {
+                margin-bottom: 0;
+                border-bottom: 0;
+                background-color: #999;
+                color: white;
+                text-align: center;
+            }
+            li:nth-of-type(even) {
+                background-color: #e8e8e8;
+            }
+            .formobile {
+                display: initial;
+            }
+            .notformobile {
+                display: none;
+            }
+            ul {
+                margin: 0;
+            }
+            ul li:before {
+                 content: none;
+            }
+            li {
+                line-height: 30px;
+                font-size: 1.2rem;
+            }
+            ul.samples>li {
+                line-height: initial;
+                font-size: initial;
+            }
+            li>a {
+                font-weight: bold;
+            }
+            li>a:before {
+                content: attr(href);
+            }
+            li>a>img {
+                display: none;
+            }
+            div>p {
+                text-align: justify;
+            }
+        </style>
+        <style media="print">
+            #content {
+                width: initial;
+            }
+            #sidebar {
+                float: right;
+                width: 25%;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-right: unset;
+                padding-right: unset;
+            }
+            #education,
+            #experience {
+                border: unset;
+                padding: unset;
+                margin: unset;
+            }
+            #education>hr,
+            #experience>hr {
+                width: 70%;
+            }
+            .tagline {
+                display: block;
+                text-align: center;
+            }
+            .noprint,
+            .formobile {
+                display: none;
+            }
+            .printbreak {
+                display: block;
+            }
+            body {
+                margin: 0;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            ul.plain {
+                font-size: .8em;
+            }
+            li {
+                line-height: initial;
+                font-size: 0.8rem;
+            }
+            li>a>img {
+                display: initial;
+                width: 100%;
+            }
+            li>span {
+                font-size: 6px;
+                line-height: 20px;
+            }
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+        </style>
+        <title>Curriculum Vitae of Mr. Eoghan Conway</title>
+    </head>
+    <body>
+        <section id="container">
+            <br class="noprint" />
+            <header id="top">
+                <h1>Curriculum Vitae of <br class="formobile">Mr. Eoghan Conway</h1>
+                <nav class="tagline">
+                    <span>💻 Software professional</span>
+                    <span>🏆 Accomplished leader</span>
+                    <br class="printbreak">
+                    <span>🍀 Irish national</span>
+                    <span>🌎 Global citizen</span>
+                    <span>🚀 Ready for action!</span></nav>
+            </header>
+            <aside id="sidebar">
+                <div id="contact">
+                    <h2>Contact</h2>
+                    <ol>
+                        <li>Email
+                            <ul class="plain">
+                                <li><b class="ackwards">moc.liamg@cilbup+yawnocnahgoe</b></li>
+                            </ul>
+                        </li>
+                        <li>Phone / WhatsApp
+                            <ul class="plain">
+                                <li><b class="ackwards">2309436 78 353+</b></li>
+                            </ul>
+                        </li>
+                        <li>LinkedIn
+                            <ul class="plain">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/eoghan-conway-67a7029/" data-alt="https://www.linkedin.com/in/eoghan-conway-67a7029/">
+                                        <img src="data:image/png;base64,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" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>JavaScript<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>HTML5<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>CSS3<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Node.js<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Java<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Groovy<span>⭐⭐⭐⭐</span></li>
+                        <li>Docker<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Objective C<span>⭐⭐⭐</span></li>
+                        <li>C++<span>⭐⭐⭐</span></li>
+                        <li>Elasticsearch<span>⭐⭐⭐⭐</span></li>
+                        <li>Neo4j<span>⭐⭐⭐⭐</span></li>
+                        <li>SQLite<span>⭐⭐⭐</span></li>
+                        <li>MySQL<span>⭐⭐⭐⭐</span></li>
+                        <li>PostgreSQL<span>⭐⭐⭐</span></li>
+                        <li>Linux<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Windows<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Git<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Shell scripting<span>⭐⭐⭐⭐</span></li>
+                        <li>Networking<span>⭐⭐⭐⭐</span></li>
+                        <li>Agile Methodologies<span>⭐⭐⭐⭐⭐</span></li>
+                        <li>Workflow Development<span>⭐⭐⭐⭐⭐</span></li>
+                    </ul>
+                    <p>(And many more!)</p>
+                </div>
+                <div id="profile">
+                    <h2>Strengths</h2>
+                    <i class="notformobile">I am...</i>
+                    <ul>
+                        <li>An enthusiastic self-starter</li>
+                        <li>A clear and effective communicator</li>
+                        <li>Consistently effective under pressure</li>
+                        <li>Flexible with a wide range of skills</li>
+                        <li>Someone with excellent teamwork skills</li>
+                        <li>Willing to travel</li>
+                    </ul>
+                </div>
+                <div id="objectives">
+                    <h2>Objectives</h2>
+                    <i class="notformobile">I will...</i>
+                    <ul>
+                        <li>Lead my teams to their greatest success</li>
+                        <li>Constantly improve through practice</li>
+                        <li>Continuously learn new skills</li>
+                        <li>Never quit</li>
+                    </ul>
+                </div>
+                <div id="values">
+                    <h2>Values</h2>
+                    <i class="notformobile">I believe...</i>
+                    <ul>
+                        <li>Quality is a mindset</li>
+                        <li>Simple is elegant</li>
+                        <li>Respect is reciprocal</li>
+                        <li>Honesty is the best policy</li>
+                    </ul>
+                </div>
+                <div id="interests">
+                    <h2>Interests</h2>
+                    <i class="notformobile">I love...</i>
+                    <ul>
+                        <li>Cycling<!--(Running, Swimming)--></li>
+                        <li>Reading</li>
+                        <li>Yoga</li>
+                        <li>Board games</li>
+                        <li>Winter sports<!--(Skiing, Snowboarding)--></li>
+                        <li>Languages<!--(Spanish, German, Czech, Polish, Chinese, Japanese)--></li>
+                    </ul>
+                </div>
+                <div id="references">
+                    <h2>References</h2>
+                    <p>References will be made available on reasonable request</p>
+                </div>
+                <br />
+                <div id="footer">
+                    <i>Last updated April 2020</i>
+                </div>
+            </aside>
+            <main id="content">
+                <section id="experience">
+                    <h2>Professional Experience</h2>
+                    <h3>Senior Software Consultant</h3>
+                    <h5>On-site software consultancy provided on behalf of Sidero Ltd. for Ericsson Ltd.</h5>
+                    <i>October 2018 - Present (~2 years)</i>
+                    <p>I am currently the Product Owner for Private Networks. <a href="https://www.ericsson.com/en/networks/offerings/mission-critical-private-networks/private-networks">Private Networks provide a scalable platform for business-critical and mission-critical industrial use cases with 4G and 5G connectivity.</a> This has presented me with challenges from inside and outside the organisation and I have worked hard to develop a plan that will deliver a high quality solution within the project constraints.</p>
+                    <i>February 2015 - September 2018 (~3.5 years)</i>
+                    <p>I was the lead UI developer for a high performing team. My role involved architecting, communicating and developing solutions. I interviewed and mentored new joiners, reviewed code contributions and provided on call support for customer units. My main achievements to date are in improving the reliability of the product through the inception and development of a lightweight, promise-based integration testing framework as well as designing and introducing a client-server framework that delivers cross-application actions.</p>
+                    <p><b>Technologies learned:</b> Mocha, Sinon, Chai, Spock, JBoss, Docker, Elasticsearch</p>
+                    <p><b>Technologies improved:</b> JavaScript, HTML5, CSS3, Mocha, Sinon, Chai, NodeJS, Java, Groovy, Spock, JBoss, Docker, Python, Elasticsearch, Bash, Linux</p>
+                    <hr />
+                    <h3>Senior Mobile Developer</h3>
+                    <h5>Senior Developer at University of Maynooth</h5>
+                    <i>January 2014 - February 2015 (~1 year)</i>
+                    <p>I worked as lead developer of a small team for an EU funded eHealth project. My role involved researching, prototyping and developing an Android app to be used by patients with Parkinson's disease. I was responsible for creating prototype applications and services, as well as running experiments with a view to determining the scope and variability of latencies in the system.</p>
+                    <p><b>Technologies learned:</b> Bluetooth BLE, Csound, Python, Arduino</p>
+                    <p><b>Technologies improved:</b> Java, Android, Bluetooth 2.0, C</p>
+                    <hr />
+                    <h3>Software Design Engineer</h3>
+                    <h5>Subcontracted to Ericsson Ltd.</h5>
+                    <i>February 2013 - January 2014  (~1 year)</i>
+                    <p>I was recommended for and ultimately joined a team working on a network visualisation product for a suite of Self Organising Network solutions in the Telecommunications space. I was tasked as a GUI specialist based on my experience. My main achievements were in improving the performance and reliability of the product's UI through adoption of native Javascript and CSS3.</p>
+                    <p><b>Technologies learned:</b> GWT, HighCharts, OpenLayers, Node, Sybase IQ, Clearcase</p>
+                    <p><b>Technologies improved:</b> Java, JavaScript, HTML, CSS, jQuery, JUnit, Git, Maven</p>
+                    <h5>Researcher at Athlone Institute of Technology</h5>
+                    <i>April 2005 - February 2013 (~8 years)</i>
+                    <p>I worked on over 20 software projects for academic & commercial partnerships. I was a development team leader for larger projects and also worked independently or with remote developers for smaller projects.</p>
+                    <p>Some sample projects:</p>
+                    <ul class="samples">
+                        <li>A Mobile Health Monitor system using J2ME, Bluetooth, JSP and MySQL.</li>
+                        <li>An Android usage analytics library using the Services interface to passively monitor app lifecycle data.</li>
+                        <li>An iPhone VoIP application for an enterprise phone vendor using the Core Audio libraries.</li>
+                        <li>A port of a Windows Mobile App to iOS for a security company.</li>
+                        <li>A B2B SIP User Agent implemented in a SipServlet for an IMS application.</li>
+                        <li>A fitness App using J2ME, Bluetooth, GPS and Google Maps.</li>
+                        <li>An embedded web UI for a security camera platform using lighttpd, php and jQuery.</li>
+                    </ul>
+                    <p>I have also completed a number of smaller projects for Irish companies using technologies such as Java, Objective C, Javascript, jQuery, JSP, PHP, CakePHP, MySQL, Derby, Hibernate, Groovy and Spring. Some of these projects can still be found in production years later.</p>
+                    <p><b>Technologies learned:</b> jQuery, Subversion, Git, Maven</p>
+                    <p><b>Technologies improved:</b> C++, Java, JavaScript, HTML, CSS, C, Python, Groovy, C#</p>
+                    <h5>Tutor at Athlone Institute of Technology</h5>
+                    <i>Also...</i>
+                    <p>I taught supplementary classes to undergraduate students, teaching OpenGL through C++ & Java on Android. I taught summer classes in HTML, CSS, JavaScript, PHP and ActionScript.</p>
+                    <hr />
+                    <h3>Entrepreneur</h3>
+                    <i>Dec 2004 - Apr 2005 (~0.5 years)</i>
+                    <p>I started my own registered business with a limited budget around one of my ideas for a premium SMS service. I performed all the technical, management and sales duties as well as advertising design including graphic design & websites. I designed, built and deployed a prototype application for a live trial with a major Irish mobile network operator. Like many small enterprises, it was as unprofitable as it was educational. The adventure came to an end when I was recommended for a role in AIT's nascent software research centre, which after careful deliberation I accepted.</p>
+                    <hr />
+                    <h3>Software Engineer with YQA Now Ltd.</h3>
+                    <i>May 2002 - July 2002 (~0.25 years)</i>
+                    <p>On the strength of my work at 2PM, YQA Now (renamed 3Touch in 2004) requested that I develop the software for their upcoming touchscreen lectern product. I created and delivered the prototype on time and also participated in the subsequent presentation of the product to potential customers and investors.</p>
+                    <hr />
+                    <h3>Software Engineering Intern with 2PM Technologies Ltd</h3>
+                    <i>Mar 2001 - Sept 2001  (~0.5 years)</i>
+                    <p>While at college, I gained my first taste of commercial software development experience on a six month period of cooperative education with this startup company based in Athlone. My main responsibility was to develop a JavaScript client for a web application project but I also contributed to side projects, the company website and customer demos.</p>
+                    <p><b>Technologies learned:</b> Visual Basic 6</p>
+                    <p><b>Technologies improved:</b> Java, JavaScript, HTML, CSS, ASP</p>
+                </section>
+                <hr />
+                <section id="education">
+                    <h2>Education</h2>
+                    <b>University of Limerick, Ireland</b> <i>1999 - 2003</i>
+                    <p class="award">Bachelor of Science in Computer Systems (LM051)</p>
+                    <p>LM051 is an NFQ Level 8 Major Award Honours Bachelor Degree offered by the Department of Computer Science and Information Systems at the University of Limerick. This course has a great track record of equipping students to be successful professionals in the highly dynamic software industry.</p>
+                    <p><b>Technologies learned:</b> C++, Java, ASP</p>
+                    <p><b>Technologies improved:</b> JavaScript, HTML, CSS</p>
+                    <hr />
+                    <b>Marist College Athlone, Ireland</b> <i>1997 - 1999</i>
+                    <p class="award">Self taught</p>
+                    <p>I can trace my interest in computing back to two distinct events, both trade shows. I met some enthusiastic company reps who were happy to show a wide-eyed teenager what their company produced and it left a great impression on me. When I first gained access to a home computer, I immediately set about learning what it could do and taught myself web design. When I was studying for the leaving certificate (~A levels) I joined the school computing club to gain a bit more exposure and to converse with my peers about the latest developments in the industry.</p>
+                    <p><b>Technologies learned:</b> JavaScript, HTML, CSS</p>
+                </section>
+            </main>
+        </section>
+    </body>
+</html>
